@@ -1,0 +1,16 @@
+#primeiro: funcionamento de um semáforo feito no nim. inspiração no curso women can code.
+
+proc semaforo(sinalanterior: char):
+  
+  char=
+  
+  if sinalanterior == 'V':
+    result = 'A'
+  elif sinalanterior == 'A':
+    result = 'P'
+  elif sinalanterior == 'P':
+    result = 'V'
+  
+echo semaforo('P')
+echo semaforo('V')
+echo semaforo('A')
